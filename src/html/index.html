@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投票 - 政大塊投</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="accountAddress" class="account-info"></div>
+
+    <header class="page-header">
+        <h1>政大塊投</h1>
+    </header>
+
+    <div class="container">
+        <div class="voting-info">
+            <i data-lucide="calendar"></i>
+            <span id="votingPeriod">投票時間：載入中...</span>
+        </div>
+
+        <div class="card">
+            <h2 class="vote-title" id="voteTitle">載入投票標題中...</h2>
+            <p class="vote-description" id="voteDescription">載入投票說明中...</p>
+
+            <div id="optionsContainer">
+                <!-- 選項將被動態插入這裡 -->
+            </div>
+
+            <button id="voteButton" class="btn" disabled>
+                <i data-lucide="check"></i>
+                投票
+            </button>
+
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module">
+        import { App } from '../js/app.js';
+    </script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
